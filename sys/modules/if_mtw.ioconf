@@ -1,0 +1,8 @@
+ioconf mtw
+
+include "conf/files"
+include "dev/usb/files.usb"
+
+pseudo-root usbdevif*
+
+mtw* at usbdevif?
